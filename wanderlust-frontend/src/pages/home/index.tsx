@@ -13,19 +13,19 @@ import backpack from "../../assets/icons/backpack.png"
 import mountian from "../../assets/images/mountian-2.jpg"
 import flag from "../../assets/icons/flag.png"
 import cardimage from "../../assets/images/cardimage.jpg"
-// import coffee from "../../assets/images/coffee.jpg"
-// import banner3 from "../../assets/icons/banner-3.png"
-// import banner4 from "../../assets/icons//banner-4.png"
-// import banner5 from "../../assets/icons//banner-5.png"
-// import banner2 from "../../assets/icons//banner-2.png"
-// import banner1 from "../../assets/icons//banner-1.png"
-// import image1 from "../../assets/images/image1.jpg"
-// import image2 from "../../assets/images/image2.jpg"
-// import image3 from "../../assets/images/image3.jpg"
-// import image4 from "../../assets/images/image4.jpg"
-// import image6 from "../../assets/images/image6.jpg"
-// import credicard from "../../assets/images/creditcard-logo.png"
-// import CountUp from "react-countup";
+import coffee from "../../assets/images/coffee.jpg"
+import banner3 from "../../assets/icons/banner-3.png"
+import banner4 from "../../assets/icons//banner-4.png"
+import banner5 from "../../assets/icons//banner-5.png"
+import banner2 from "../../assets/icons//banner-2.png"
+import banner1 from "../../assets/icons//banner-1.png"
+import image1 from "../../assets/images/image1.jpg"
+import image2 from "../../assets/images/image2.jpg"
+import image3 from "../../assets/images/image3.jpg"
+import image4 from "../../assets/images/image4.jpg"
+import image6 from "../../assets/images/image6.jpg"
+import credicard from "../../assets/images/creditcard-logo.png"
+import CountUp from "react-countup";
 
 
 
@@ -388,7 +388,27 @@ const Home = ({ text = "" }: { text: string }) => {
         
 
       </section>
-
+      <section className="">
+        <div className="pt-20 lg:w-[86%] w-[90%] m-auto flex flex-col items-center">
+         <h3 className=" leading-20 text-3xl text-[#193556] font-semibold text-center">WE ARE FUTURED IN </h3>
+         <div className="flex lg:flex-row gap-3 flex-col mt-5 ">
+        <div><img src={banner3} alt="" /></div>
+        <div><img src={banner4} alt="" /></div>
+        <div><img src={banner5} alt="" /></div>
+        <div><img src={banner2} alt="" /></div>
+        <div><img src={banner1} alt="" /></div>
+        </div>
+        </div>
+      </section>
+      <section>
+        <div className="flex  lg:flex-row flex-col pt-30">
+        <div><img src={image1} alt="" /></div>
+        <div><img src={image2} alt="" /></div>
+        <div><img src={image3} alt="" /> </div>
+        <div><img src={image4} alt="" /></div>
+        <div><img src={image6} alt="" /> </div>
+        </div>
+      </section>
       {/* <section>
       <div className="px-40 text-4xl font-bold text-[#193556]">
       <CountUp start={1} end={2000}>
@@ -421,75 +441,10 @@ const Home = ({ text = "" }: { text: string }) => {
         </div>
 
       </section> */}
-      {/* <section>
-        <div className="px-40 pt-20">
-        <div className="text-center ">
-          <h3 className=" leading-20 text-3xl text-[#193556] font-semibold">WE ARE FUTURED IN </h3>
-        </div>
-        <div className="flex ">
-        <div><img src={banner3} alt="" /></div>
-        <div><img src={banner4} alt="" /></div>
-        <div><img src={banner5} alt="" /></div>
-        <div><img src={banner2} alt="" /></div>
-        <div><img src={banner1} alt="" /></div>
-        </div>
-        </div>
-      </section>
+      {/*
+    
       <section>
-        <div className="flex pt-30">
-        <div><img src={image1} alt="" /></div>
-        <div><img src={image2} alt="" /></div>
-        <div><img src={image3} alt="" /> </div>
-        <div><img src={image4} alt="" /></div>
-        <div><img src={image6} alt="" /> </div>
-        </div>
-       
-
-      </section>
-      <section>
-//       <footer className="bg-[#202020] text-white py-30 flex ">
-//     <div className="max-w-screen-xl mx-auto px-4">
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-//             <div>
-//                 <h3 className="text-xl font-semibold leading-10">Contact Info</h3>
-//                 <ul className="leading-10">
-//                     <li>London: +6-345-3456-233</li>
-//                     <li>Hawaii: +1-345-33454-4</li>
-//                     <li>Greece: +34-8757-4556</li>
-//                     <li>Email: <a href="mailto:Ask@traveltourtheme.com">Ask@traveltourtheme.com</a></li>
-//                 </ul>
-//             </div>
-//             <div>
-//                 <h3 className="text-xl font-semibold">About Us</h3>
-//                 <ul className="leading-10 border-b-1 ">
-//                     <li className="border-b-1"><a href="#">Our Story</a></li>
-//                     <li className="border-b-1"><a href="#">Travel Blog & Tips</a></li>
-//                     <li className="border-b-1"><a href="#">Working With Us</a></li>
-//                     <li className="border-b-1"><a href="#">Be Our Partner</a></li>
-//                 </ul>
-//             </div>
-//             <div>
-//                 <h3 className="text-xl font-semibold ">Support</h3>
-//                 <ul className="leading-10 ">
-//                     <li className="border-b-1"><a href="#">Customer Support</a></li>
-//                     <li className="border-b-1"><a href="#">Privacy & Policy</a></li>
-//                     <li className="border-b-1"><a href="#">Contact Channels</a></li>
-//                 </ul>
-//             </div>
-//             <div className="leading-10">
-//                 <h3 className="text-xl font-semibold">Pay Safely With Us</h3>
-//                 <p>The payment is encrypted and transmitted securely with an SSL protocol.</p>
-//                 <div className="flex space-x-4 mt-4">
-//                   <img src={credicard} alt="" />
-                    
-//                 </div>
-//             </div>
-//         </div>
-//         <div className="mt-10 text-center text-sm">
-//             <p>&copy; 2025 Travel Tour. All Rights Reserved.</p>
-//         </div>
-//     </div>
-// </footer>
+     
 
         
 
