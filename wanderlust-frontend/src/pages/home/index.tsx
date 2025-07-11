@@ -210,11 +210,11 @@ const Home = ({ text = "" }: { text: string }) => {
           </div>
         </div>
       </section>
-      <section className="carusel-tour py-32 lg:  ">
+      <section className="carusel-tour py-32 lg:">
         <div className="lg:w-[86%] m-auto">
-          <div>
+          {/* <div>
             <h3 className="text-3xl font-bold text-start  text-[#343434]">Find our popular tours</h3>
-          </div>
+          </div> */}
           <Swiper
         slidesPerView={1}
         spaceBetween={40}
