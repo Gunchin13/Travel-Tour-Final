@@ -13,7 +13,6 @@ import backpack from "../../assets/icons/backpack.png"
 import mountian from "../../assets/images/mountian-2.jpg"
 import flag from "../../assets/icons/flag.png"
 import cardimage from "../../assets/images/cardimage.jpg"
-import coffee from "../../assets/images/coffee.jpg"
 import banner3 from "../../assets/icons/banner-3.png"
 import banner4 from "../../assets/icons//banner-4.png"
 import banner5 from "../../assets/icons//banner-5.png"
@@ -24,22 +23,17 @@ import image2 from "../../assets/images/image2.jpg"
 import image3 from "../../assets/images/image3.jpg"
 import image4 from "../../assets/images/image4.jpg"
 import image6 from "../../assets/images/image6.jpg"
-import credicard from "../../assets/images/creditcard-logo.png"
-import CountUp from "react-countup";
-
-
-
-
+import users1 from "../../assets/images/users1.jpg"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import { PiClockCountdownLight } from "react-icons/pi";
-import { FaStar } from "react-icons/fa";
+import { FaQuoteLeft, FaStar } from "react-icons/fa";
+import { IoStar } from "react-icons/io5";
+import { RiDoubleQuotesL } from "react-icons/ri";
+import CountUp, { useCountUp } from 'react-countup';
+
 const Home = ({ text = "" }: { text: string }) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
-
-  
-
   return (
     <>
       <section className="hiking-slider w-full lg:h-screen h-[60vh] flex items-center justify-center overflow-hidden">
@@ -388,6 +382,177 @@ const Home = ({ text = "" }: { text: string }) => {
         
 
       </section>
+      <section className="carusel-tour py-32 lg:">
+        <div className="lg:w-[86%] m-auto">
+          <Swiper
+        slidesPerView={1}
+        spaceBetween={40}
+        className="mySwiper mt-16 lg:mt-20"
+        breakpoints={{
+          690: {
+            slidesPerView: 2,
+          },
+          991: {
+            slidesPerView: 3,
+          },
+        }}
+       >
+        <SwiperSlide  className="shadow-lg rounded-xl overflow-hidden">
+          <div className="flex flex-col bg-white  ">
+            <div className="px-17 py-8 flex flex-col items-start gap-10">
+            <RiDoubleQuotesL className="text-5xl text-[#193556]" />
+
+            <div >
+            <p className=" text-[#6a7581] text-start">Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisq.</p>
+
+            </div>
+            <div className="flex   gap-5">
+              <div className="w-15 h-15">
+              <img src={users1} className="rounded-full" alt="" />
+              </div>
+              <div>
+              <h3 className= " text-[#6a7581] font-bold">Jane Smith</h3>
+              <div className="flex text-[#ffa127]">
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <FaRegStarHalfStroke />
+              </div>
+              
+              <span className="text-[#6a7581]">Journalist</span>
+              </div>
+
+
+            </div>
+            </div>
+
+          </div>
+        </SwiperSlide>
+        <SwiperSlide  className="shadow-lg rounded-xl overflow-hidden">
+          <div className="flex flex-col bg-white  ">
+            <div className="px-17 py-8 flex flex-col items-start gap-10">
+            <RiDoubleQuotesL className="text-5xl text-[#193556]" />
+            <div >
+            <p className=" text-[#6a7581] text-start">Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisq.</p>
+            </div>
+            <div className="flex   gap-5">
+              <div className="w-15 h-15">
+              <img src={users1} className="rounded-full" alt="" />
+              </div>
+              <div>
+              <h3 className= " text-[#6a7581] font-bold">Jane Smith</h3>
+              <div className="flex text-[#ffa127]">
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <FaRegStarHalfStroke />
+              </div>
+              <span className="text-[#6a7581]">Journalist</span>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </SwiperSlide>
+        <SwiperSlide  className="shadow-lg rounded-xl overflow-hidden">
+          <div className="flex flex-col bg-white  ">
+            <div className="px-17 py-8 flex flex-col items-start gap-10">
+            <RiDoubleQuotesL className="text-5xl text-[#193556]" />
+            <div >
+            <p className=" text-[#6a7581] text-start">Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisq.</p>
+            </div>
+            <div className="flex   gap-5">
+              <div className="w-15 h-15">
+              <img src={users1} className="rounded-full" alt="" />
+              </div>
+              <div>
+              <h3 className= " text-[#6a7581] font-bold">Jane Smith</h3>
+              <div className="flex text-[#ffa127]">
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <FaRegStarHalfStroke />
+              </div>
+              <span className="text-[#6a7581]">Journalist</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide  className="shadow-lg rounded-xl overflow-hidden">
+          <div className="flex flex-col bg-white  ">
+            <div className="px-17 py-8 flex flex-col items-start gap-10">
+            <RiDoubleQuotesL className="text-5xl text-[#193556]" />
+            <div >
+            <p className=" text-[#6a7581] text-start">Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisq.</p>
+            </div>
+            <div className="flex   gap-5">
+              <div className="w-15 h-15">
+              <img src={users1} className="rounded-full" alt="" />
+              </div>
+              <div>
+              <h3 className= " text-[#6a7581] font-bold">Jane Smith</h3>
+              <div className="flex text-[#ffa127]">
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <FaRegStarHalfStroke />
+              </div>
+              <span className="text-[#6a7581]">Journalist</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide  className="shadow-lg rounded-xl overflow-hidden">
+          <div className="flex flex-col bg-white  ">
+            <div className="px-17 py-8 flex flex-col items-start gap-10">
+            <RiDoubleQuotesL className="text-5xl text-[#193556]" />
+            <div >
+            <p className=" text-[#6a7581] text-start">Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisq.</p>
+            </div>
+            <div className="flex   gap-5">
+              <div className="w-15 h-15">
+              <img src={users1} className="rounded-full" alt="" />
+              </div>
+              <div>
+              <h3 className= " text-[#6a7581] font-bold">Jane Smith</h3>
+              <div className="flex text-[#ffa127]">
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <IoStar />
+              <FaRegStarHalfStroke />
+              </div>
+              <span className="text-[#6a7581]">Journalist</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </SwiperSlide>
+          </Swiper>
+          </div>
+      </section>
+      <section>
+      <CountUp start={0} end={2000} duration={1} />
+      <span>+</span>
+
+ 
+      </section>
+
+     
+
+     
+      
+
+
+
+
+
       <section className="">
         <div className="pt-20 lg:w-[86%] w-[90%] m-auto flex flex-col items-center">
          <h3 className=" leading-20 text-3xl text-[#193556] font-semibold text-center">WE ARE FUTURED IN </h3>
@@ -409,18 +574,20 @@ const Home = ({ text = "" }: { text: string }) => {
         <div><img src={image6} alt="" /> </div>
         </div>
       </section>
-      {/* <section>
-      <div className="px-40 text-4xl font-bold text-[#193556]">
-      <CountUp start={1} end={2000}>
-        {({ countUpRef, start }) => (
-       <div>
-       <span ref={countUpRef} />
-       <button onClick={start}>Awesome Hikers</button>
-       </div>
-       )}
-      </CountUp>
-      </div>
-      </section> */}
+
+
+
+      
+
+      
+
+     
+
+
+     
+      
+
+
       {/* <section className="pt-20">
         <div className="grid  grid-cols-2 ">
         <div>
