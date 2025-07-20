@@ -1,17 +1,15 @@
-import Footer from "./layouts/client/footer"
-import Header from "./layouts/client/header"
-import TopBar from "./layouts/client/topBar"
-import Home from "./pages/home"
- 
+import { createBrowserRouter, RouterProvider } from "react-router"
+import ROUTES from "./routes"
+
+const router = createBrowserRouter(ROUTES)
+
 
 function App() {
 
   return (
     <>
-    <TopBar/>
-    <Header/>
-    <Home/>
-    <Footer/>
+    <RouterProvider router={router}/>
+    
     </>
    
     

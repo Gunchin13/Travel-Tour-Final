@@ -3,66 +3,86 @@ import logoMobile  from "../../../assets/images/logo 2.png"
 import logo  from "../../../assets/images/logo-hiking-1.png"
 import { SlBasket } from "react-icons/sl"
 import { RxHamburgerMenu } from "react-icons/rx"
+import { useEffect, useState } from "react"
+import AOS from "aos"
+import { Link } from "react-router"
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
+   useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+      });
+    }, []);
   return (
-    <div className="lg:mt-19 mt-3 p-4 flex sticky top-0 right-0 w-full items-end lg:justify-center justify-between">
-      <ul className="hidden items-end gap-10 lg:flex">
+    
+    <div  className={`overflow:hidden lg:mt-10 mt-3 p-4 flex sticky top-0 right-0 w-full items-end lg:justify-center justify-between z-50 transition-all duration-300 ${
+      isScrolled ? "bg-white shadow-md" : "bg-transparent"
+    }`}>
+      <ul data-aos="fade-down"  className="hidden items-end gap-10 lg:flex">
         <li>
-          <a
-            href="#"
+          <Link
+            to="/"
             className="text-gray-500 font-bold text-sm uppercase tracking-widest"
           >
             home
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
+          <Link
+            to="tourlist"
             className="text-gray-500 font-bold text-sm uppercase tracking-widest"
           >
-            tour list
-          </a>
+          tour list
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
+          <Link
+            to="tour-search"
             className="text-gray-500 font-bold text-sm uppercase tracking-widest"
           >
-            tour search
-          </a>
+          tour search
+          </Link>
         </li>
         <li>
-          <img src={logo} alt="Logo" className="mx-5 w-43" />
+          <img src={logo} alt="Logo" className="mx-5 mb-2 w-45" />
         </li>
         <li>
-          <a
-            href="#"
+          <Link
+            to="destinations"
             className="text-gray-500 font-bold text-sm uppercase tracking-widest"
           >
             destinations
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
+          <Link
+            to="pages"
             className="text-gray-500 font-bold text-sm uppercase tracking-widest"
           >
             pages
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
+          <Link
+            to="blog"
             className="text-gray-500 font-bold text-sm uppercase tracking-widest"
           >
             blog
-          </a>
+          </Link>
         </li>
       </ul>
-      <div className="lg:hidden">
+      <div data-aos="fade-down"  className="lg:hidden">
         <img src={logoMobile} alt="" className="w-45" />
       </div>
-      <div className="flex items-end gap-5">
+      <div data-aos="fade-down"  className="flex items-end gap-5">
         <SlBasket className="text-2xl text-amber-400 font-black text-center lg:hidden"/>
         <RxHamburgerMenu className="text-2xl text-amber-400 flex font-black lg:hidden" />
       </div>

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import 'swiper/css';
+@import "aos/dist/aos.css";
 
 
 .hiking-slider {
@@ -12,6 +13,13 @@
 
   .left-about-content {
     background-image: url(../../wanderlust-frontend/src/assets/images/bgmountain.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  .travel-story {
+    background-image: url(../../wanderlust-frontend/src/assets/images/column-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,6 +66,17 @@
     height: 100%;
     object-fit: cover;
   }
+  .count-up{
+    background-image: url(../src/assets/icons/counter-bg.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+
+  
+
+
   
 
    
