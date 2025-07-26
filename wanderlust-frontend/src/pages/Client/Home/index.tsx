@@ -231,9 +231,9 @@ import image6 from "../../../assets/images/image6.jpg"
  slidesPerView: 3,
  },
  }}
- > <ToursCard turimage={cardimage2} title="Switzerland Hiking The Matterhorn" date="7 Days / 4 Nights" comment="(1 Review)" saleprice="400" costprice={600}/>
-
+ >
  <SwiperSlide className="shadow-lg rounded-xl overflow-hidden">
+ <ToursCard turimage={cardimage2} title="Switzerland Hiking The Matterhorn" date="7 Days / 4 Nights" comment="(1 Review)" saleprice="400" costprice={600}/>
  </SwiperSlide>
  <SwiperSlide className="shadow-lg rounded-xl overflow-hidden">
  <ToursCard turimage={cardimage2} title="Switzerland Hiking The Matterhorn" date="12 Days / 5 Nights" comment="(1 Review)" saleprice="600" costprice={500}/>
@@ -478,6 +478,26 @@ import image6 from "../../../assets/images/image6.jpg"
  },
  }}
  >
+ <SwiperSlide className="">
+ <div>
+ <div className="flex flex-col relative group"> 
+ <div className="overflow-hidden">
+ <img src={bagslider} className="object-cover transform group-hover:scale-110 transition-all duration-300 " alt="" />
+ </div>
+ <div className="absolute bottom-0 opacity-0 group-hover:opacity-80 flex ">
+ <div className="flex ">
+ <button className="bg-black text-white text-center px-5 py-4 flex items-center gap-3"> <FaEye />
+ View Details</button>
+ <button className="bg-[#435b97] text-white px-5 py-4 flex items-center gap-3 "> <SlBasket />Add to Cart</button>
+ </div>
+ </div>
+ </div>
+ <div className="bg-white flex flex-col gap-3">
+ <h3 className="font-bold text-xl">Light Weight Bag</h3>
+ <span className="text-[#425a96] font-semibold">$170.00</span>
+ </div>
+ </div>
+ </SwiperSlide>
  <SwiperSlide className="">
  <div>
  <div className="flex flex-col relative group"> 

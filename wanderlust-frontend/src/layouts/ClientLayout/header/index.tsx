@@ -26,7 +26,7 @@ const Header = () => {
     <div  className={`overflow:hidden lg:mt-10 mt-3 p-4 flex sticky top-0 right-0 w-full items-end lg:justify-center justify-between z-50 transition-all duration-300 ${
       isScrolled ? "bg-white shadow-md" : "bg-transparent"
     }`}>
-      <ul data-aos="fade-down"  className="hidden items-end gap-10 lg:flex">
+      <ul  className="hidden items-end gap-10 lg:flex">
         <li>
           <Link
             to="/"
@@ -45,7 +45,7 @@ const Header = () => {
         </li>
         <li>
           <Link
-            to="tour-search"
+            to="toursearch"
             className="text-gray-500 font-bold text-sm uppercase tracking-widest"
           >
           tour search
@@ -57,18 +57,28 @@ const Header = () => {
         <li>
           <Link
             to="destinations"
-            className="text-gray-500 font-bold text-sm uppercase tracking-widest"
-          >
+            className="text-gray-500 font-bold text-sm uppercase tracking-widest">
             destinations
           </Link>
         </li>
-        <li>
-          <Link
-            to="pages"
-            className="text-gray-500 font-bold text-sm uppercase tracking-widest"
-          >
-            pages
-          </Link>
+        <li className="relative group leading-8 :">
+          <a
+            href="#"
+            className="text-gray-500 font-bold text-sm uppercase tracking-widest">pages</a>
+            <ul  className="absolute w-[11rem] group-hover:block hidden  bg-black py-3 px-5 ">
+              <li className= "text-gray-400 block hover:text-white cursor-pointer"><Link to="contact">About</Link></li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Our Services</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="contact">Contact</Link></li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Portfolio</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Gallery</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Team </li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Price Table</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Maintenance</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Coming Soon</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >404 Page</li>
+
+
+            </ul>
         </li>
         <li>
           <Link

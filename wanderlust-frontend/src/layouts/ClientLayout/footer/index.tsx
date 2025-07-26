@@ -6,7 +6,8 @@ const Footer = () => {
     <footer className="bg-[#202020] text-white py-30 flex ">
     <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-           <div>              <h3 className="text-xl font-semibold leading-10">Contact Info</h3>
+           <div>             
+             <h3 className="text-xl font-semibold leading-10">Contact Info</h3>
              <ul className="leading-10">            
                    <li>London: +6-345-3456-233</li>
                  <li>Hawaii: +1-345-33454-4</li>

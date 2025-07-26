@@ -20,8 +20,6 @@ const Login = () => {
             <input  className='w-full px-3 py-2 border border-[#e6e6e6]' type="password" id='password' placeholder='password' name='password' />
           </div>
           </div>
-
-
           <div className='py-10 w-full] mb-6'>
             <button className='  cursor-pointer bg-[#243076] w-full text-white  font-semibold py-5' type='submit'>SIGN IN!</button>
           </div>

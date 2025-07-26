@@ -10,6 +10,7 @@ import Blog from "../pages/Client/Blog";
 import ToursCard from "../companents/ToursCard/indext";
 import TourSearch from "../pages/Client/TourSearch";
 import TourList from "../pages/Client/TourList";
+import Contact from "../pages/Client/Contact";
 
 
 const ROUTES = [
@@ -37,8 +38,9 @@ const ROUTES = [
         element: <Destinations/>
     },
     {
-        path: 'pages',
-        element: <Pages/>
+        path: 'contact',
+        element: <Contact/>
+        
     },
     {
         path: 'blog',
@@ -48,6 +50,7 @@ const ROUTES = [
         path: 'toursearch',
         element: <TourSearch/>
     },
+    
    
    
    
