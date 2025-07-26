@@ -1,7 +1,10 @@
 import React from 'react'
-import { FaLocationArrow, FaPhone, FaPhoneAlt } from 'react-icons/fa'
+import { FaFacebookF, FaLocationArrow, FaPhone, FaPhoneAlt } from 'react-icons/fa'
 import TitleBanner from '../../../companents/TitleBanner'
 import { GoMail } from 'react-icons/go'
+import { TbBrandTwitter, TbCookieManFilled, TbMailFilled } from 'react-icons/tb'
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
+import { BsSkype } from 'react-icons/bs'
 
 const Contact = () => {
   return ( 
@@ -55,6 +58,23 @@ const Contact = () => {
             </button>
           </form>
       </section>
+      <section className="w-full h-[60vh] ">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.52375329728!2d49.69015417571401!3d40.394475516487674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2sBaku!5e0!3m2!1sen!2saz!4v1753535225338!5m2!1sen!2saz"
+      className="border-0 w-full h-full " 
+      loading="lazy" >
+    </iframe>
+      </section>
+      <div className='text-white text-2xl flex items-center justify-center gap-8 bg-[#2d2d2d] py-20'>
+      <TbMailFilled />
+      <FaFacebookF  />
+      <BsSkype />
+      <TbBrandTwitter />
+      </div>
+
+        
+
+     
 
        
 

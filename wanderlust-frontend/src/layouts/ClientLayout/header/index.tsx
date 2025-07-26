@@ -64,7 +64,7 @@ const Header = () => {
         <li className="relative group leading-8 :">
           <a
             href="#"
-            className="text-gray-500 font-bold text-sm uppercase tracking-widest">pages</a>
+            className="text-gray-500 font-bold text-sm uppercase tracking-widest">Pages</a>
             <ul  className="absolute w-[11rem] group-hover:block hidden  bg-black py-3 px-5 ">
               <li className= "text-gray-400 block hover:text-white cursor-pointer"><Link to="contact">About</Link></li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" >Our Services</li>
@@ -80,14 +80,22 @@ const Header = () => {
 
             </ul>
         </li>
-        <li>
-          <Link
-            to="blog"
-            className="text-gray-500 font-bold text-sm uppercase tracking-widest"
-          >
-            blog
-          </Link>
+        <li className="relative group leading-8 :">
+          <a
+            href="#"
+            className="text-gray-500 font-bold text-sm uppercase tracking-widest">Blog</a>
+            <ul  className="absolute w-[11rem] group-hover:block hidden  bg-black py-3 px-5 ">
+              <li className= "text-gray-400 block hover:text-white cursor-pointer"><Link to="contact">About</Link></li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Blog Full</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Blog Grid</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Blog Columns </li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Single Posts</li>
+             
+
+
+            </ul>
         </li>
+        
       </ul>
       <div data-aos="fade-down"  className="lg:hidden">
         <img src={logoMobile} alt="" className="w-45" />
