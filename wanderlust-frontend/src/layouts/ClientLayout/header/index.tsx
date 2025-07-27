@@ -67,10 +67,10 @@ const Header = () => {
             className="text-gray-500 font-bold text-sm uppercase tracking-widest">Pages</a>
             <ul  className="absolute w-[11rem] group-hover:block hidden  bg-black py-3 px-5 ">
               <li className= "text-gray-400 block hover:text-white cursor-pointer"><Link to="contact">About</Link></li>
-              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Our Services</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="services">Our Services</Link></li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="contact">Contact</Link></li>
-              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Portfolio</li>
-              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Gallery</li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="portfolio">Portfolio</Link></li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="gallery">Gallery</Link></li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" >Team </li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" >Price Table</li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" >Maintenance</li>

@@ -11,6 +11,9 @@ import ToursCard from "../companents/ToursCard/indext";
 import TourSearch from "../pages/Client/TourSearch";
 import TourList from "../pages/Client/TourList";
 import Contact from "../pages/Client/Contact";
+import Portfolio from "../pages/Client/Portfolio";
+import Gallery from "../pages/Client/Gallery";
+import Services from "../pages/Client/Services";
 
 
 const ROUTES = [
@@ -49,6 +52,18 @@ const ROUTES = [
     {
         path: 'toursearch',
         element: <TourSearch/>
+    },
+    {
+        path: 'portfolio',
+        element: <Portfolio/>
+    },
+    {
+        path: 'gallery',
+        element: <Gallery/>
+    },
+    {
+        path: 'services',
+        element: <Services/>
     },
     
    

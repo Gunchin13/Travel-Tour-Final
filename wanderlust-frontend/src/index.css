@@ -140,7 +140,11 @@
   .destinations-card:hover::before {
     opacity: .6;
   }
-  
+
+  .portfolio-card-bg{
+    position: relative;
+  }
+  .portfolio-card-bg
 
   
 
