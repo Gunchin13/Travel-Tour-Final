@@ -1,19 +1,21 @@
 
 import ClientLayout from "../layouts/ClientLayout";
-import About from "../pages/Client/TourList";
 import Login from "../pages/shared/Login";
 import Home from "../pages/Client/Home";
 import Register from "../pages/Client/Register";
 import Destinations from "../pages/Client/Destinations";
-import Pages from "../pages/Client/Pages";
 import Blog from "../pages/Client/Blog";
-import ToursCard from "../companents/ToursCard/indext";
 import TourSearch from "../pages/Client/TourSearch";
 import TourList from "../pages/Client/TourList";
 import Contact from "../pages/Client/Contact";
 import Portfolio from "../pages/Client/Portfolio";
 import Gallery from "../pages/Client/Gallery";
 import Services from "../pages/Client/Services";
+import Team from "../pages/Client/Team";
+import AdminLayout from "../layouts/admin";
+import Dasboard from "../pages/admin/Dashboard";
+import AdminProfile from "../pages/admin/AdminProfile";
+import UserManagement from "../pages/admin/UseManagement";
 
 
 const ROUTES = [
@@ -65,16 +67,39 @@ const ROUTES = [
         path: 'services',
         element: <Services/>
     },
+    {
+        path: 'team',
+        element: <Team/>
+    },
     
    
    
    
   ]
 
+    },
+    {
+        element: <AdminLayout/>,
+        path: "/admin/",
+        children:[
+            {
+                index: true,
+                element: <Dasboard/>
+            },
+            {
+                path: "adminProfile",
+                element: <AdminProfile/>,
+            },
+            {
+                path: "usermanagement",
+                element: <UserManagement/>,
+            },
+        ]
+
     }
 
   
-]
+];
 
 
 export default ROUTES;

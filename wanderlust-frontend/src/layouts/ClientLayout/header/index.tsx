@@ -71,7 +71,7 @@ const Header = () => {
               <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="contact">Contact</Link></li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="portfolio">Portfolio</Link></li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="gallery">Gallery</Link></li>
-              <li className="text-gray-400 block  hover:text-white cursor-pointer" >Team </li>
+              <li className="text-gray-400 block  hover:text-white cursor-pointer" ><Link to="team">Team</Link> </li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" >Price Table</li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" >Maintenance</li>
               <li className="text-gray-400 block  hover:text-white cursor-pointer" >Coming Soon</li>

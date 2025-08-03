@@ -144,7 +144,23 @@
   .portfolio-card-bg{
     position: relative;
   }
-  .portfolio-card-bg
+  .team-slider {
+    background-image: url(../../wanderlust-frontend//src/assets/images/team-slider.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:  fixed;
+   
+  }
+  .plain-carousel {
+    background-image: url(../../wanderlust-frontend//src//assets/images/plaincarousel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:  fixed;
+   
+  }
+ 
 
   
 
