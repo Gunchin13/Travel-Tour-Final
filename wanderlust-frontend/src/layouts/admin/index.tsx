@@ -16,7 +16,7 @@ const AdminLayout = () => {
       <Sidebar isOpen={isSidebarOpen} />
       <div className="bg-white flex flex-col items-start justify-start w-full">
         <Navbar toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
-        <div className="admin-content w-full p-6 overflow-y-auto">
+        <div className="admin-content w-full h-screen p-6 overflow-y-auto">
           <Outlet />
         </div>
       </div>
