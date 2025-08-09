@@ -70,7 +70,7 @@ switch (status) {
 };
 const feeds = [
 {
-  icon: <FaBell className="text-purple-600" />,
+  icon: <FaBell className="text-red-600" />,
   bg: "bg-purple-100",
   text: "You have 3 pending tasks.",
   time: "Just Now",
@@ -121,7 +121,7 @@ return (
           { icon: <FaShoppingCart />, value: "100%", label: "ORDER" },
         ].map((item, index) => (
           <div key={index} className="bg-white flex items-center gap-4 p-6">
-            <div className="text-purple-500 text-2xl">{item.icon}</div>
+            <div className="text-[#7267ef] text-2xl">{item.icon}</div>
             <div>
               <h3 className="text-lg font-bold">{item.value}</h3>
               <p className="text-sm text-gray-500">{item.label}</p>
@@ -188,7 +188,7 @@ return (
                 <Tooltip />
                 <Bar
                   dataKey="value"
-                  fill="#8b5cf6"
+                  fill="#7267ef"
                   barSize={6}
                   radius={[4, 4, 0, 0]}
                 />
@@ -276,9 +276,8 @@ return (
         </div>
       </div>
     </div>
-
     <div className="flex flex-col">
-      <ResponsiveContainer width="100%" height={600}>
+      <ResponsiveContainer width="100%" height={550}>
         <ComposedChart data={data}>
           <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
           <XAxis dataKey="month" />
@@ -287,47 +286,41 @@ return (
           <Legend />
           <Bar
             dataKey="total"
-            barSize={30}
-            fill="#8884d8"
+            barSize={25}
+            fill="#7267ef"
             name="Total Sales"
           />
           <Line
             type="monotone"
             dataKey="average"
-            stroke="#8884d8"
+            stroke="#7267ef"
             name="Average"
           />
         </ComposedChart>
       </ResponsiveContainer>
-      <div className="grid grid-cols-2 gap-3 mt-8">
-        {/* Total Profit */}
-        <div className="bg-white rounded-lg p-5 shadow flex items-center justify-between">
+      <div className="grid grid-cols-2 gap-5 mt-10">
+        <div className="bg-white rounded-lg p-7 shadow flex items-center justify-between">
           <div>
             <p className="text-sm text-gray-500 font-medium">Total Profit</p>
             <h2 className="text-2xl font-bold mt-1">$1,783</h2>
           </div>
-          <FaGift className="text-purple-500 text-2xl" />
+          <FaGift className="text-[#7267ef] text-2xl" />
         </div>
 
-        {/* Total Orders */}
-        <div className="bg-purple-500 rounded-lg p-5 shadow flex items-center justify-between text-white">
+        <div className="bg-[#7267ef] rounded-lg p-5 shadow flex items-center justify-between text-white">
           <div>
             <p className="text-sm font-medium">Total Orders</p>
             <h2 className="text-2xl font-bold mt-1">15,830</h2>
           </div>
           <FaShoppingBag className="text-white text-2xl" />
         </div>
-
-        {/* Average Price */}
-        <div className="bg-purple-500 rounded-lg p-5 shadow flex items-center justify-between text-white">
+        <div className="bg-[#7267ef] rounded-lg p-5 shadow flex items-center justify-between text-white">
           <div>
             <p className="text-sm font-medium">Average Price</p>
             <h2 className="text-2xl font-bold mt-1">$6,780</h2>
           </div>
           <FaDollarSign className="text-white text-2xl" />
         </div>
-
-        {/* Product Sold */}
         <div className="bg-white rounded-lg p-5 shadow flex items-center justify-between">
           <div>
             <p className="text-sm text-gray-500 font-medium">Product Sold</p>
@@ -336,7 +329,7 @@ return (
           <FaTag className="text-gray-500 text-2xl" />
         </div>
       </div>
-      <div className="bg-white p-6 rounded-lg shadow w-[85%] mx-auto mt-10">
+      <div className="bg-white p-6 rounded-lg shadow w-[100%] mx-auto mt-10">
         <h2 className="text-lg font-bold mb-4">Feeds</h2>
         <ul className="space-y-5">
           {feeds.map((feed, idx) => (

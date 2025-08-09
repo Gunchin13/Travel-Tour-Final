@@ -64,7 +64,6 @@ const Gallery = () => {
     <PortfolioCard/>
     <PortfolioCard/>
     </div>
-
     </section>
     <section className="lg:w-[85%] w-[95%] mx-auto my-16">
         <div className="title flex items-center flex-col justify-center gap-3 mb-8">
@@ -217,6 +216,67 @@ const Gallery = () => {
           <img src={carousel1} alt="" />
         </SwiperSlide>
         
+      </Swiper>
+     </div>
+     </section>
+     <section>
+     <div className='w-[70%] m-auto py-15 cursor-pointer hover:opacity-80'>
+     <Swiper
+        pagination={{
+          type: 'progressbar',
+        }}
+        navigation={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        
+      </Swiper>
+     </div>
+     </section>
+     <section>
+     <div className='w-[70%] m-auto py-15 cursor-pointer hover:opacity-80'>
+     <Swiper
+        pagination={{
+          type: 'progressbar',
+        }}
+        navigation={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={carousel1} alt="" />
+        </SwiperSlide>
       </Swiper>
      </div>
      </section>

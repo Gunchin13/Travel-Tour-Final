@@ -22,10 +22,6 @@ const Team = () => {
            <TeamCard/>
            <TeamCard/>
         </div>
-   
-   
-
-
     </section>
     <section className='team-slider py-10 w-full '>
         <div className='lg:w-[75%] w-[95%] m-auto py-10 flex flex-col gap-4 '>
@@ -37,7 +33,6 @@ const Team = () => {
         <Swiper
         slidesPerView={3}
         spaceBetween={30}
-       
         className="mySwiper"
       >
         <SwiperSlide><TeamCard/></SwiperSlide>
@@ -46,17 +41,18 @@ const Team = () => {
         <SwiperSlide><TeamCard/></SwiperSlide>
         <SwiperSlide><TeamCard/></SwiperSlide>
         <SwiperSlide><TeamCard/></SwiperSlide>
-
-       
       </Swiper>
         </div>
         </div>
-       
     </section>
-   
+    <section className='m-auto w-[80%] py-6 '>
+     <div className='grid lg:grid-cols-3 grid-cols-1 gap-25'>
+      <TeamCard/>
+      <TeamCard/>
+      <TeamCard/>
+     </div>
+    </section>
     </>
-   
   )
 }
-
 export default Team

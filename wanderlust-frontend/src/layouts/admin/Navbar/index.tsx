@@ -1,7 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaSearch } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
-import avatarimage from "../../../assets/icons/dashboarduser.jpg";
+import dasboarduser from "../../../assets/icons/usericon.jpg";
 
 interface NavbarProps {
   toggleSidebar: () => void;
@@ -26,13 +26,13 @@ const Navbar = ({ toggleSidebar }: NavbarProps) => {
           </div>
           <div className="flex items-center gap-3">
             <img
-              src={avatarimage}
+              src={dasboarduser}
               alt="User Avatar"
               className="w-11 object-center rounded-full"
             />
             <div>
               <span className="capitalize font-bold text-sm">
-                orkhan aslanov
+                Gunchin Savzixanova
               </span>
               <p className="text-xs">administrator</p>
             </div>
